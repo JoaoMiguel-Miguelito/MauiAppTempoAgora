@@ -41,9 +41,11 @@ namespace MauiAppTempoAgora.Services
                         sunset = sunset.ToString(),
                     };
                 }
+                else
+                {
+                    Console.WriteLine($"Erro inesperado: {resp.StatusCode}");
+                }
             }
-
-
 
             return t;
         }
