@@ -37,8 +37,8 @@ namespace MauiAppTempoAgora.Services
                         temp_max = (double)rascunho["main"]["temp_max"],
                         speed = (double)rascunho["wind"]["speed"],
                         visibility = (int)rascunho["visibility"],
-                        sunrise = sunrise.ToString(),
-                        sunset = sunset.ToString(),
+                        sunrise = sunrise.ToString("HH:mm:ss"),
+                        sunset = sunset.ToString("HH:mm:ss"),
                     };
                 }
                 else
